@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crgb(6, 4, 138);
+    background: #ffff;
 }
 .navbar .max-width{
     display: flex;
@@ -99,6 +99,7 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    
 }
 .navbar .logo a span{
     color:rgba(243, 16, 17, 1);
@@ -701,7 +702,7 @@ footer span a:hover{
 	width: 35px;
 	height:35px;
 	margin:0px 5px;
-	background-color: rgba(243, 16, 17, 1);
+	background-color: crgb(6, 4, 138);
 	box-shadow:2px 2px 12px rgba(243, 16, 17, 1);
 	display: flex;
 	justify-content: center;
