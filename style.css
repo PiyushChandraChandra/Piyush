@@ -63,7 +63,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgba(24, 24, 24, 1);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #ffff;
+    background: rgba(24, 24, 24, 1);
 }
 .navbar .max-width{
     display: flex;
@@ -96,6 +96,9 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
     color: #fff;
     font-size: 35px;
     font-weight: 600;
@@ -106,7 +109,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: crgb(6, 4, 138);
 }
 
 
@@ -116,17 +119,17 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: crgb(6, 4, 138);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(6, 4, 138);
+    color: rgba(243, 16, 17, 1);
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: crgb(6, 4, 138);
 }
 
 /* menu btn styling */
@@ -140,7 +143,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(6, 4, 138);
+    background: rgba(24, 24, 24, 1);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -168,7 +171,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: rgba(24, 24, 24, 1);
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -180,15 +183,15 @@ section .title::after{
     margin: auto 0 auto 30px;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 40px;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 30px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 50px;
     margin: 5px 0;
 }
 .home .home-content .text-1 span{
@@ -210,6 +213,62 @@ section .title::after{
 .home .home-content a:hover{
     color: crgb(6, 4, 138);;
     background: none;
+}
+#box div
+{
+position: absolute;
+height: 250px;
+width: 250px;
+border: 1px solid lightgrey;
+background: rgba(243, 16, 17, 1);
+text-align: right;
+font-size: 200px;
+}
+
+#box
+{
+-webkit-animation-name: animation;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 6s;
+margin:80;
+-webkit-transform-style: preserve-3d;
+-webkit-transform-origin: 125px 125px 0;
+}
+
+#box .one
+{ 
+-webkit-transform: translateZ(125px);
+}
+#box .two
+{ 
+-webkit-transform: rotateX(-90deg) translateZ(125px);
+}
+#box .three 
+{
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
+}
+#box .four 
+{
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(125px);
+}
+#box .five
+{ 
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(125px);
+}
+#box .six 
+{
+-webkit-transform: rotateY(90deg) translateZ(125px);
+}
+
+@-webkit-keyframes animation
+{
+from,to{}
+16% { -webkit-transform: rotateY(-90deg);}
+33% { -webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+50% { -webkit-transform: rotateY(225deg) rotateZ(135deg);}
+66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
+83% { -webkit-transform: rotateX(135deg);}
 }
 
 /* about section styling */
@@ -552,13 +611,13 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: rgba(243, 16, 17, 1);
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
 footer span a{
-    color: rgba(243, 16, 17, 1);
+    color: #fff;
     text-decoration: none;
 }
 footer span a:hover{
@@ -710,7 +769,7 @@ footer span a:hover{
 }
 
 .social-icons i{
-	color:#FFFFFF;
+	color:#111;
 	font-size: 14px;
 	
 }
