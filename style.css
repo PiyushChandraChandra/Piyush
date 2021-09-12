@@ -725,6 +725,17 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .home {
+        flex-direction: column;
+        height: 920px;
+      }
+    .box{
+        position: absolute;
+        top: 500px;
+        right: auto;
+        left: 20vh;
+        transform: scale(0.9);
+    }
 }
 
 @media (max-width: 500px) {
